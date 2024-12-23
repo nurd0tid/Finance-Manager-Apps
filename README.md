@@ -1,5 +1,7 @@
 # Finance Manager Apps
 
+![Group 1000001074](https://github.com/user-attachments/assets/79c7d1cc-384b-41ac-b2ee-43dd3f1328e2)
+
 Finance Manager Apps is a financial management application designed to help users manage their finances easily. This application is built using **Flutter**, integrated with **Supabase** as a backend-as-a-service, and **Xendit** for payment features. All backend functionalities are managed without additional servers, ensuring a simpler and more efficient implementation.
 
 ## Key Features
