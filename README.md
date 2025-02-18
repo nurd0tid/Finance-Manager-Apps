@@ -73,6 +73,7 @@ create table
   public.transactions (
     id uuid not null default extensions.uuid_generate_v4 (),
     user_id uuid null,
+    explore_id uuid null,
     type text not null,
     amount integer not null,
     status text not null,
@@ -103,6 +104,7 @@ create table
   public.transaction_history (
     id bigserial not null,
     user_id uuid not null,
+    explore_id uuid null,
     transaction_id text not null,
     description text not null,
     amount numeric(15, 2) not null,
@@ -233,7 +235,8 @@ BEGIN
     user_id_param,
     amount,
     'withdraw',
-    'completed'
+    'completed',
+    'explore'
   )
   RETURNING id INTO transaction_id;
 
